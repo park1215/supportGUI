@@ -23,6 +23,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
@@ -51,7 +52,7 @@ public class NewConnectProvisionTest {
 	
 	@Parameters({"browser", "salesChannel"})
 	@BeforeTest
-	public void beforeTest(String browser, String salesChannel){
+	public void beforeTest(@Optional String browser, @Optional String salesChannel){
 		
 		this.workbook = Utilities.loadExcelFile("Addresses.xlsx");
 		
