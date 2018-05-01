@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="NewConnect">
+    <test name="changeOrder">
+    <parameter name="browser" value="chrome" />
+    <parameter name="salesChannel" value="wb_direct" />
+        <classes>
+            <class name ="testCases.NewConnect" />
+        </classes>
+    </test>
+<!--    <test name="ATT">
+    <parameter name="browser" value="chrome" />
+    <parameter name="salesChannel" value="att" />
+        <classes>
+            <class name ="testCases.NewConnect" />
+        </classes>
+    </test>
+ <test name="PROSPERIST">
+    <parameter name="browser" value="chrome" />
+    <parameter name="salesChannel" value="prosperist" />
+        <classes>
+            <class>
+                name="testCases.NewConnect"
+            </class>
+            
+        </classes>
+    </test>
+    <test name="TELEBRAS">
+    <parameter name="browser" value="chrome" />
+    <parameter name="salesChannel" value="telebras" />
+        <classes>
+            <class>
+                name="testCases.NewConnect"
+            </class>
+        </classes>
+    </test>
+    <test name="COMCAST">
+    <parameter name="browser" value="chrome" />
+    <parameter name="salesChannel" value="comcast" />
+        <classes>
+            <class>
+                name="testCases.NewConnect"
+            </class>
+        </classes>
+    </test> -->
+</suite>
