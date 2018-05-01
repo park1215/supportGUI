@@ -9,7 +9,7 @@
             <class name ="testCases.NewConnectProvisionTest" />
         </classes>
     </test>
-<!--    <test name="ATT">
+<!--   <test name="ATT">
     <parameter name="browser" value="chrome" />
     <parameter name="salesChannel" value="att" />
         <classes>
