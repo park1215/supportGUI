@@ -5,7 +5,8 @@
     <parameter name="browser" value="chrome" />
     <parameter name="salesChannel" value="wb_direct" />
         <classes>
-            <class name ="testCases.NewConnect" />
+            <class name ="testCases.NewConnectTest" />
+            <class name ="testCases.NewConnectProvisionTest" />
         </classes>
     </test>
 <!--    <test name="ATT">
