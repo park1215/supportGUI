@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 
 import supportGUI.AppForTest;
 
-public class NewConnect {
+public class NewConnectTest {
 
 	AppForTest aft = new AppForTest();
 	
