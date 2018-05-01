@@ -62,6 +62,9 @@ public class NewConnectProvisionTest {
 		
 		System.out.println("SupportGUI URL : " + baseUrl);
 		
+		browser = "Chrome";
+		salesChannel = "wb_direct";
+		
 		try {
 			 if(browser.equalsIgnoreCase("chrome")){
 			        driver = BrowserFactory.startBrowser("chrome", baseUrl);
