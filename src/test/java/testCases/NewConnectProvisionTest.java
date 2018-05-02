@@ -50,10 +50,14 @@ public class NewConnectProvisionTest {
 	
 	public String serviceAgreementNumber;
 	
-	@Parameters({"browser", "salesChannel"})
+	public String browser;
+	
+	public String salesChannel;
+	
+//	@Parameters({"browser", "salesChannel"})
 	@BeforeTest
-	public void beforeTest(@Optional String browser, @Optional String salesChannel){
-		
+//	public void beforeTest(@Optional String browser, @Optional String salesChannel){
+	public void beforeTest(){
 		this.workbook = Utilities.loadExcelFile("Addresses.xlsx");
 		
 		this.prop = Utilities.loadPropertyFile("SupportGUI.properties");
@@ -91,10 +95,10 @@ public class NewConnectProvisionTest {
 		
 	}
 	
-	@Parameters("salesChannel")
+//	@Parameters("salesChannel")
 	@Test(priority=1)
-	public void J1170118(String salesChannel){
-		
+//	public void J1170118(String salesChannel){
+	public void J1170118(){
 		this.randomMac = Utilities.getRandomMac();
 		
 		String transactionReference = "SPark_"+randomMac.replaceAll(":", "");
@@ -627,10 +631,10 @@ public class NewConnectProvisionTest {
 	    softAssert.assertAll();
 	}
 	
-	@Parameters("salesChannel")
+//	@Parameters("salesChannel")
 	@Test(priority=2)
-	public void GID_1804006(String salesChannel){
-		
+//	public void GID_1804006(String salesChannel){
+	public void GID_1804006(){
 		Boolean spoofProvision = Boolean.parseBoolean(prop.getProperty("spoofProvision"));
 		
 		System.out.println("spoofProvision " + spoofProvision);
